@@ -1,4 +1,4 @@
-FROM node:20-alpine AS base
+FROM node:26.7.0-alpine AS base
 
 FROM base AS deps
 RUN corepack enable && corepack prepare pnpm@9.5.0
